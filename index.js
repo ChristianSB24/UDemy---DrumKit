@@ -53,6 +53,7 @@ function buttonAnimation(currentKey) {
 
     var activeButton = document.querySelector("." + currentKey);
     
+    // Also works but easier and faster to use classlist.add()
     // activeButton.setAttribute("class", "pressed " + currentKey + " drum")
 
     // setTimeout(function() {activeButton.setAttribute("class", "drum " + currentKey)}, 100)
@@ -65,7 +66,7 @@ function buttonAnimation(currentKey) {
 
 }
 
-
+// If statements work but better to use switch statements
 // function soundType() {
 //     console.log(this.innerHTML)
 //     if (this.innerHTML === "w") {
